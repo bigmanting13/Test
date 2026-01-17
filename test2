@@ -107,7 +107,7 @@ $memoryIntegrityOutput = @()
 $threatsOutput = @()
 $powershellSigOutput = @()
 
-# ====== FILES + MODULES (AUDIT ONLY – NO DELETIONS) ======
+# ======= FILES + MODULES (AUDIT ONLY – NO DELETIONS) ======= 
 
 $defaultModules = @(
     "Microsoft.PowerShell.Archive", "Microsoft.PowerShell.Diagnostics", "Microsoft.PowerShell.Host",
