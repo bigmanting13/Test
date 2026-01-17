@@ -107,8 +107,6 @@ $memoryIntegrityOutput = @()
 $threatsOutput = @()
 $powershellSigOutput = @()
 
-----
-
 # ====== FILES + MODULES (AUDIT ONLY – NO DELETIONS) ======
 
 $defaultModules = @(
@@ -208,7 +206,6 @@ if (-not $foundIssues) {
     $modulesOutput += "SUCCESS: No unauthorized modules/files found."
 }
 
-----
 try {
     if ($env:OS -eq "Windows_NT" -and (Get-CimInstance Win32_OperatingSystem -ErrorAction Stop)) {
         $windowsOutput += "SUCCESS: Running on Windows."
